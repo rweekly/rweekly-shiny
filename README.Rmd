@@ -19,6 +19,18 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
+## About
+
+This app is designed to help the rweekly team building a release.
+
+You can run it with:
+
+```r
+rweekly::run_app()
+```
+
+## Infra
+
 You're reading the documentation for version
 
 ```{r}
