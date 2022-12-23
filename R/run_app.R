@@ -19,6 +19,8 @@ run_app <- function(
       # Putting the resources here
       golem_add_external_resources(),
       home(),
+      polls(),
+      draft_builder(),
       onStart = onStart,
       options = options,
       enableBookmarking = enableBookmarking,
@@ -26,7 +28,7 @@ run_app <- function(
       basepath = "",
       req_handlers = list(),
       res_handlers = list(),
-      wrapped = shiny::fluidPage
+      wrapped = shiny::tagList
     ),
     golem_opts = list(...)
   )

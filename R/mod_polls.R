@@ -9,8 +9,11 @@
 #' @importFrom shiny NS tagList
 mod_polls_ui <- function(id) {
   ns <- NS(id)
-  tagList(
-    h1("Hello {brochure}!")
+  htmlTemplate(
+    app_sys("app/www/template.html"),
+    body = tagList(
+      h2("Add the polls here")
+    )
   )
 }
 
@@ -27,7 +30,7 @@ mod_polls_server <- function(id) {
 #'
 #' @noRd
 #' @importFrom brochure page
-polls <- function(id = "polls", href = "/polls") {
+polls <- function(id = "polls", href = "/poll") {
   page(
     href = href,
     ui = mod_polls_ui(id = id),

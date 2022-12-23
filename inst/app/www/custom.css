@@ -1,0 +1,13 @@
+:root {
+  --nav-height: 70px;
+}
+
+body {
+  background-color: white;
+}
+
+.container-fs {
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  padding: 2em;
+}

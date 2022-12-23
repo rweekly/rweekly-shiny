@@ -9,8 +9,12 @@
 #' @importFrom shiny NS tagList
 mod_home_ui <- function(id) {
   ns <- NS(id)
-  tagList(
-    h1("Hello {brochure}!")
+  htmlTemplate(
+    app_sys("app/www/template.html"),
+    body = tagList(
+      h2("HELLO RWEEKLY TEAM!")
+    )
+    # add here other template arguments
   )
 }
 

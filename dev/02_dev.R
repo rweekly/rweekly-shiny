@@ -35,6 +35,9 @@ golem::add_js_handler("handlers")
 golem::add_css_file("custom")
 golem::add_sass_file("custom")
 
+golem::use_external_css_file("https://unpkg.com/papercss@1.9.0/dist/paper.min.css")
+golem::add_html_template()
+
 ## Add internal datasets ----
 ## If you have data in your package
 usethis::use_data_raw(name = "my_dataset", open = FALSE)

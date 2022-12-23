@@ -9,8 +9,11 @@
 #' @importFrom shiny NS tagList
 mod_draft_builder_ui <- function(id) {
   ns <- NS(id)
-  tagList(
-    h1("Hello {brochure}!")
+  htmlTemplate(
+    app_sys("app/www/template.html"),
+    body = tagList(
+      h2("Add the draft builder here")
+    )
   )
 }
 

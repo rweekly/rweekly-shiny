@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>rweekly</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="border fixed" id="nav">
+      <div class="nav-brand">
+        <h4>RWeekly Release App</h4>
+      </div>
+      <div class="collapsible">
+        <input id="collapsible2" type="checkbox" name="collapsible2">
+        <label for="collapsible2">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a href="/">Home</a></li>
+            <li><a href="/draft_builder">Draft Builder</a></li>
+            <li><a href="/poll">Poll</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fs">
+    {{ body }}
+  </div>
+</body>
+<script>
+  document.documentElement.style.setProperty('--nav-height', document.getElementById("nav").offsetHeight);
+</script>
+
+</html>
